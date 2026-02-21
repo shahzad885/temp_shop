@@ -1,11 +1,10 @@
-// lib/overlay_service.dart
 import 'package:flutter/services.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'screenshot_providers.dart';
+import '../Providers/screenshot_providers.dart';
 
 class OverlayService {
   static const _overlayChannel = MethodChannel('com.example.temp_shop/overlay');
-  static const _expiryChannel  = MethodChannel('com.example.temp_shop/expiry');
+  static const _expiryChannel = MethodChannel('com.example.temp_shop/expiry');
 
   late ProviderContainer _container;
 
@@ -15,8 +14,8 @@ class OverlayService {
     // Listen for expiry selections coming from the native overlay buttons
     _expiryChannel.setMethodCallHandler((call) async {
       if (call.method == 'onExpirySelected') {
-        final screenshotId   = call.arguments['screenshotId'] as String;
-        final durationMins   = call.arguments['durationMinutes'] as int;
+        final screenshotId = call.arguments['screenshotId'] as String;
+        final durationMins = call.arguments['durationMinutes'] as int;
 
         Duration? duration;
         if (durationMins > 0) {
@@ -32,7 +31,8 @@ class OverlayService {
   }
 
   Future<bool> hasOverlayPermission() async {
-    return await _overlayChannel.invokeMethod<bool>('hasOverlayPermission') ?? false;
+    return await _overlayChannel.invokeMethod<bool>('hasOverlayPermission') ??
+        false;
   }
 
   Future<void> requestOverlayPermission() async {

@@ -1,8 +1,7 @@
-// lib/widgets/screenshot_card.dart
 import 'dart:io';
 import 'package:flutter/material.dart';
-import 'package:temp_shop/app_theme.dart';
-import 'package:temp_shop/screenshot_item.dart';
+import 'package:temp_shop/Theme/app_theme.dart';
+import 'package:temp_shop/Widgets/screenshot_item.dart';
 
 import 'quick_options_sheet.dart';
 
@@ -34,7 +33,6 @@ class ScreenshotCard extends StatelessWidget {
         child: Stack(
           fit: StackFit.expand,
           children: [
-            // Image
             Image.file(
               File(item.filePath),
               fit: BoxFit.cover,
@@ -44,7 +42,6 @@ class ScreenshotCard extends StatelessWidget {
               ),
             ),
 
-            // Gradient overlay at bottom
             Positioned.fill(
               child: DecoratedBox(
                 decoration: BoxDecoration(
@@ -58,11 +55,9 @@ class ScreenshotCard extends StatelessWidget {
               ),
             ),
 
-            // Expiry badge top-right
             if (item.expiryDate != null)
               Positioned(top: 6, right: 6, child: _ExpiryBadge(item: item)),
 
-            // Vault icon
             if (item.isVault)
               const Positioned(
                 top: 6,

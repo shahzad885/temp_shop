@@ -1,4 +1,3 @@
-// lib/models/screenshot_item.dart
 import 'package:hive/hive.dart';
 
 class ScreenshotItem extends HiveObject {
@@ -37,7 +36,7 @@ class ScreenshotItem extends HiveObject {
   }
 }
 
-// ─── Manual Hive TypeAdapter (no annotations, no build_runner) ───────────────
+// Manual Hive TypeAdapter - no code generation
 
 class ScreenshotItemAdapter extends TypeAdapter<ScreenshotItem> {
   @override

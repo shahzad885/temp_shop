@@ -2,9 +2,9 @@ import 'dart:io';
 import 'dart:async';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:path/path.dart' as p;
-import 'Widgets/screenshot_item.dart';
+import '../Widgets/screenshot_item.dart';
 import '../Providers/screenshot_providers.dart';
-import 'Services/overlay_service.dart';
+import 'overlay_service.dart';
 
 class FileWatcherService {
   Timer? _pollTimer;

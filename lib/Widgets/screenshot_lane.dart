@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:temp_shop/app_theme.dart';
-import 'package:temp_shop/screenshot_item.dart';
+import 'package:temp_shop/Theme/app_theme.dart';
+import 'package:temp_shop/Widgets/screenshot_item.dart';
 
 import 'screenshot_card.dart';
 
@@ -29,7 +29,6 @@ class ScreenshotLane extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        // Section header
         Padding(
           padding: const EdgeInsets.fromLTRB(16, 20, 16, 12),
           child: Row(
@@ -90,7 +89,6 @@ class ScreenshotLane extends StatelessWidget {
           ),
         ),
 
-        // Horizontal scroll
         SizedBox(
           height: 175,
           child: ListView.separated(

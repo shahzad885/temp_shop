@@ -1,7 +1,7 @@
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:hive_flutter/hive_flutter.dart';
-import 'Widgets/screenshot_item.dart';
+import '../Widgets/screenshot_item.dart';
 import '../Providers/screenshot_providers.dart';
 
 const _channelId = 'tempshot_expiry';

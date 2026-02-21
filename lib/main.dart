@@ -1,16 +1,15 @@
-// lib/main.dart
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 import 'package:permission_handler/permission_handler.dart';
-import 'package:temp_shop/app_theme.dart';
-import 'package:temp_shop/background_service.dart';
-import 'package:temp_shop/file_watcher_service.dart';
-import 'package:temp_shop/home_screen.dart';
-import 'package:temp_shop/notification_service.dart';
-import 'package:temp_shop/overlay_service.dart';
-import 'package:temp_shop/screenshot_item.dart';
-import 'package:temp_shop/screenshot_providers.dart';
+import 'package:temp_shop/Theme/app_theme.dart';
+import 'package:temp_shop/Services/background_service.dart';
+import 'package:temp_shop/Services/file_watcher_service.dart';
+import 'package:temp_shop/Screens/home_screen.dart';
+import 'package:temp_shop/Services/notification_service.dart';
+import 'package:temp_shop/Services/overlay_service.dart';
+import 'package:temp_shop/Widgets/screenshot_item.dart';
+import 'package:temp_shop/Providers/screenshot_providers.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();

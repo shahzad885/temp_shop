@@ -4,8 +4,8 @@ import 'package:flutter_background_service/flutter_background_service.dart';
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 import 'package:path/path.dart' as p;
-import 'Services/notification_service.dart';
-import 'Widgets/screenshot_item.dart';
+import 'notification_service.dart';
+import '../Widgets/screenshot_item.dart';
 
 const _possibleDirs = [
   '/storage/emulated/0/Pictures/Screenshots',

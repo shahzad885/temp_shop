@@ -4,7 +4,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:temp_shop/Theme/app_theme.dart';
 import 'package:temp_shop/Widgets/screenshot_item.dart';
 import 'package:temp_shop/Providers/screenshot_providers.dart';
-import 'Widgets/quick_options_sheet.dart';
+import 'quick_options_sheet.dart';
 
 class HeroSection extends ConsumerWidget {
   const HeroSection({super.key});
