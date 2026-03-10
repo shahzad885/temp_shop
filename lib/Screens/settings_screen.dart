@@ -317,7 +317,7 @@ class _AppInfoCard extends StatelessWidget {
         children: [
           AnimatedBuilder(
             animation: controller,
-            builder: (_, __) => CustomPaint(
+            builder: (_, _) => CustomPaint(
               size: const Size(double.infinity, 160),
               painter: _SettingsRipplePainter(progress: controller.value),
             ),
@@ -456,7 +456,7 @@ class _ToggleTile extends StatelessWidget {
       trailing: Switch(
         value: value,
         onChanged: onChanged,
-        activeColor: AppColors.red,
+        activeThumbColor: AppColors.red,
         inactiveThumbColor: AppColors.grey,
         inactiveTrackColor: AppColors.greyDark,
       ),

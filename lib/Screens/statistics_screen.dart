@@ -169,7 +169,7 @@ class _RippleHeroStat extends StatelessWidget {
           children: [
             AnimatedBuilder(
               animation: controller,
-              builder: (_, __) {
+              builder: (_, _) {
                 return CustomPaint(
                   size: const Size(double.infinity, 260),
                   painter: _RipplePainter(
@@ -185,7 +185,7 @@ class _RippleHeroStat extends StatelessWidget {
               children: [
                 AnimatedBuilder(
                   animation: countAnimation,
-                  builder: (_, __) {
+                  builder: (_, _) {
                     final displayed = (value * countAnimation.value).round();
                     return Text(
                       '$displayed',
@@ -299,7 +299,7 @@ class _StatCard extends StatelessWidget {
             children: [
               AnimatedBuilder(
                 animation: animation,
-                builder: (_, __) {
+                builder: (_, _) {
                   return Text(
                     '${(value * animation.value).round()}',
                     style: TextStyle(
@@ -354,7 +354,7 @@ class _WeeklyChart extends StatelessWidget {
           const SizedBox(height: 20),
           AnimatedBuilder(
             animation: animation,
-            builder: (_, __) {
+            builder: (_, _) {
               return Row(
                 crossAxisAlignment: CrossAxisAlignment.end,
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -492,7 +492,7 @@ class _BreakdownRow extends StatelessWidget {
           const SizedBox(height: 6),
           AnimatedBuilder(
             animation: animation,
-            builder: (_, __) {
+            builder: (_, _) {
               final fraction = item.count == 0 ? 0.0 : animation.value;
               return ClipRRect(
                 borderRadius: BorderRadius.circular(4),
