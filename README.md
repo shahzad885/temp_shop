@@ -14,6 +14,12 @@
 
 TempShot watches your screenshot folder and shows a **floating overlay** the moment a new screenshot is taken — set a timer, and the file deletes itself automatically, even when the app is closed. No servers. Everything is local.
 
+## Demo
+
+<img width="654" height="473" alt="image" src="https://github.com/user-attachments/assets/c656c9a8-cc2e-479b-97dd-b7245d16d32c" />
+
+
+
 ## Features
 
 - **Floating time-picker** — appears over any app when a screenshot is detected
